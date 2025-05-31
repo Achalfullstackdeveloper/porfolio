@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENJOY</title>
+    <link rel="icon" type="image/x-icon" href="./images/iconindex.jpg" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px 0;
+            background-color: #fbf9f9;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            padding: 10px;
+        }
+
+        .search-container input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .main-container {
+            background-color: white;
+            border-radius: 15px;
+            border: 4px solid transparent;
+            border-color: #41d1c9           ;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-container:hover {
+            transform: scale(1.05);
+        }
+
+        .main-container a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main-container h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .main-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid rgb(230, 171, 24);
+            color: rgb(213, 171, 35);
+            background: transparent;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .back-button:hover {
+            background: #dbc500;
+            color: #f2f2ee;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .search-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TESTING</h1>
+
+    <a href="../index.html" class="back-button">
+        ← Back to Home
+    </a>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search project..." />
+    </div><BR>
+
+    <div class="container" id="projectsContainer">
+        <div class="main-container">
+            <a href="https://docs.google.com/spreadsheets/d/1L00MJ2Yl9KtlvKspsFCgkNPQmI8__uBY98DXt3c36HU/edit?gid=0#gid=0">
+                <h2>1. Project</h2>
+                <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Pro\">
+            </a>
+        </div>
+
+        <div class="main-container">
+            <a href="home.html">
+                <h2>2. Login Page</h2>
+                <img src="https://static.vecteezy.com/system/resources/previews/021/919/677/non_2x/login-icon-in-trendy-flat-style-isolated-on-white-background-approach-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-flat-style-for-graphic-design-vector.jpg" alt="Form">
+            </a>
+        </div>
+
+        <div class="main-container">
+            <a href="https://docs.google.com/spreadsheets/d/1B3a-t4nVUo9fC7o3hW7z6Zg9CYImvVPGPROzfCGmqXk/edit?gid=0#gid=0">
+                <h2>3. Photo</h2>
+                <img src="data:image/png;base64,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" alt="YouTube">
+            </a>
+        </div>
+
+        
+    </div>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const filter = this.value.toUpperCase();
+            const projects = document.querySelectorAll('.main-container');
+
+            projects.forEach(project => {
+                const title = project.querySelector('h2').innerText.toUpperCase();
+                project.style.display = title.includes(filter) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
+
