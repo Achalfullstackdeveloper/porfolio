@@ -185,7 +185,7 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Portfolio Section -->
+      <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -196,7 +196,7 @@
 
       <div class="container">
 
-        <!-- <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
@@ -204,63 +204,288 @@
             <li data-filter=".filter-product">JS</li>
             <li data-filter=".filter-branding">REACT JS</li>
             <li data-filter=".filter-books">Live Projects</li>
-          </ul>End Portfolio Filters -->
-          <div class="row mb-5" data-aos="fade-up" data-aos-delay="150">
-            <!-- HTML & CSS -->
-            <div class="service-card">
-              <div class="card h-100 shadow-sm text-center p-3 portfolio-category-card" style="background-color: black;">
-                <img src="https://cdn-icons-png.freepik.com/512/5968/5968305.png" class="card-img-top mx-auto"  style="height:170px;"alt="HTML CSS">
-                <div class="card-body">
-                  <h5 class="card-title">HTML & CSS</h5>
-                  <a href="./files/assignscript.html" class="stretched-link"></a>
-                </div>
+          </ul><!-- End Portfolio Filters -->
+          <br>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- html css -->
+            <!-- 1. RESUME -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="img-fluid" alt="Resume">
+              <div class="portfolio-info">
+                <h4>RESUME</h4>
+                <p>Resume</p>
+                <a href="./files/achalresume.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          
-            <!-- JavaScript -->
-            <div class="service-card">
-              <div class="card h-100 shadow-sm text-center p-3 portfolio-category-card" style="background-color: black;">
-                <img src="https://www.researchgate.net/publication/385907322/figure/fig2/AS:11431281291221821@1731945210103/JavaScript-Source-JavaScript-Icon-nd.jpg" class="card-img-top mx-auto"style="height:170px;"  alt="JavaScript">
-                <div class="card-body">
-                  <h5 class="card-title">JavaScript</h5>
-                  <a href="./files/assignscript.html" class="stretched-link"></a>
-                </div>
+
+            <!-- 2. FORM -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://www.zoho.com/sites/zweb/images/forms/templates/lead-generation-event-registration.jpg"
+                class="img-fluid" alt="Form">
+              <div class="portfolio-info">
+                <h4>FORM</h4>
+                <p>Form</p>
+                <a href="./files/home.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          
-            <!-- React JS -->
-            <div class="service-card">
-              <div class="card h-100 shadow-sm text-center p-3 portfolio-category-card" style="background-color: black;">
-                <img src="https://thumbs.dreamstime.com/b/vector-illustration-icon-react-programming-language-vector-illustration-icon-react-programming-language-251938374.jpg" class="card-img-top mx-auto"style="height:170px;"  alt="React">
-                <div class="card-body">
-                  <h5 class="card-title">React JS</h5>
-                  <a href="https://dashing-gumdrop-1ceb28.netlify.app/" class="stretched-link">Visit Site</a>
-                </div>
+
+            <!-- 3. CALCULATOR -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://m.media-amazon.com/images/I/615LHE6vGLL._AC_UF350,350_QL80_.jpg" class="img-fluid"
+                alt="Calculator">
+              <div class="portfolio-info">
+                <h4>CALCULATOR</h4>
+                <p>Calculator</p>
+                <a href="./files/calculator.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          
-            <!-- Live Projects -->
-            <div class="service-card">
-              <div class="card h-100 shadow-sm text-center p-3 portfolio-category-card" style="background-color: black;">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/050/207/204/small_2x/live-streaming-symbol-sign-icon-button-animation-motion-graphic-chroma-key-green-screen-4k-resolution-free-video.jpg" style="height:170px;"class="card-img-top mx-auto" alt="Live Projects">
-                <div class="card-body">
-                  <h5 class="card-title">Live Projects</h5>
-                  <a href="https://achalfullstackdeveloper.github.io/project/" class="stretched-link"></a>
-                </div>
+
+            <!-- 4. NATIONAL FLAG -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://miro.medium.com/v2/resize:fit:1024/1*-8yn-JD9ClYaWOAmrpqJeg.png" class="img-fluid"
+                alt="National Flag">
+              <div class="portfolio-info">
+                <h4>NATIONAL FLAG</h4>
+                <p>National Flag</p>
+                <a href="./files/indianflag.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div>
-           <!-- Testing -->
-           <div class="service-card">
-            <div class="card h-100 shadow-sm text-center p-3 portfolio-category-card" style="background-color: black;">
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/043/937/874/small_2x/online-circle-multi-circle-test-glyph-inverted-icon-design-vector.jpg" alt="Live Projects">
-              <div class="card-body">
-                <h5 class="card-title">Testing</h5>
-                <a href="./files/testing.html" class="stretched-link"></a>
+
+            <!-- 5. TOP 3 PERSONALITY -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img
+                src="https://cdn.firstcry.com/education/2022/08/20163815/Essay-On-Freedom-Fighters-10-Lines-Short-and-Long-Essay-For-Children.jpg"
+                class="img-fluid" alt="Top 3 Personality">
+              <div class="portfolio-info">
+                <h4>TOP 3 PERSONALITY</h4>
+                <p>Top 3 Personality</p>
+                <a href="./files/inlineblock.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div>
+
+            <!-- 6. CHECK BOX -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://t3.ftcdn.net/jpg/06/56/23/48/360_F_656234868_9PvPydkYgoIWRSGHsZe7sKrYu0QZeD0E.jpg"
+                class="img-fluid" alt="Check Box">
+              <div class="portfolio-info">
+                <h4>CHECK BOX</h4>
+                <p>Check Box</p>
+                <a href="./files/check.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 7. CHESS -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="https://www.euroschoolindia.com/wp-content/uploads/2023/09/how-to-play-chess.jpg"
+                class="img-fluid" alt="Chess">
+              <div class="portfolio-info">
+                <h4>CHESS</h4>
+                <p>Chess</p>
+                <a href="./files/grid.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 8. YOUTUBE PAGE -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img
+                src="https://imgv3.fotor.com/images/blog-cover-image/best-youtube-shorts-thumbnail-size_2023-09-28-033838_uvcg.png"
+                class="img-fluid" alt="YouTube Page">
+              <div class="portfolio-info">
+                <h4>YOUTUBE PAGE</h4>
+                <p>YouTube Page</p>
+
+                <a href="./files/youtube.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- js -->
+            <!-- 1. SAMPLE UI -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://unblast.com/wp-content/uploads/2021/07/Food-Delivery-App-Template-0.jpg"
+                class="img-fluid" alt="Sample UI">
+              <div class="portfolio-info">
+                <h4>SAMPLE UI</h4>
+                <p>Sample UI Design</p>
+                <a href="./files/ui.html" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 2. CHECK NUMBER -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/gh-how-to-write-a-check-01-64ad8f659cfdb.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="img-fluid" alt="Check Number">
+              <div class="portfolio-info">
+                <h4>CHECK NUMBER</h4>
+                <p>Validation for number input</p>
+                <a href="./files/check.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 3. ELIGIBILITY -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img
+                src="https://healthcareitskills.com/wp-content/uploads/2019/11/real-time-eligibility-verification.png"
+                class="img-fluid" alt="Eligibility">
+              <div class="portfolio-info">
+                <h4>ELIGIBILITY</h4>
+                <p>Check age or exam eligibility</p>
+                <a href="./files/eligible.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 4. TICKET -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://www.shutterstock.com/image-vector/vector-ticket-one-stub-rip-260nw-2389943611.jpg"
+                class="img-fluid" alt="Ticket">
+              <div class="portfolio-info">
+                <h4>TICKET</h4>
+                <p>Movie/train ticket booking UI</p>
+                <a href="./files/ticket.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 5. VOWELS -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://m.media-amazon.com/images/I/816Rk9AUNzL._AC_UF1000,1000_QL80_.jpg" class="img-fluid"
+                alt="Vowels">
+              <div class="portfolio-info">
+                <h4>VOWELS</h4>
+                <p>Count vowels in a sentence</p>
+                <a href="./files/vowel.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+
+            <!-- 7. LARGEST NUMBER -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://i.ytimg.com/vi/Mzgw6zMtipQ/maxresdefault.jpg" class="img-fluid" alt="Largest Number">
+              <div class="portfolio-info">
+                <h4>LARGEST NUMBER</h4>
+                <p>Find the largest of three numbers</p>
+                <a href="./files/largest.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 8. WEEKS -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpffVVHw7PXW8YroHcoBtV5gceeNEroIkXhpTKF5nt2-gE7XMwwsPWViOTRsajm-7s-E&usqp=CAU"
+                class="img-fluid" alt="Weeks">
+              <div class="portfolio-info">
+                <h4>WEEKS</h4>
+                <p>Show weekday based on number</p>
+                <a href="./files/week.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 9. ELECTRICITY BILL -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIErfywQOK6_qde4kYOuA4g9bBxdu3BxGg3A&s"
+                class="img-fluid" alt="Electricity Bill">
+              <div class="portfolio-info">
+                <h4>ELECTRICITY BILL</h4>
+                <p>Calculate total electricity bill</p>
+                <a href="./files/bill.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 10. KBC -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img
+                src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-1205588,resizemode-75,msid-112265437/magazines/panache/kbc-16-new-rule-update-amitabh-bachchans-show-introduces-super-sawaal-twist-check-details.jpg"
+                class="img-fluid" alt="KBC">
+              <div class="portfolio-info">
+                <h4>KBC</h4>
+                <p>Kaun Banega Crorepati Quiz</p>
+                <a href="kbc.html" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 11. BRICK -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img
+                src="https://play-lh.googleusercontent.com/O9vX4o0eQ-V-BhzRk38Bjc5ItTv_ii0Dum2dYBy3iRFmhKHkMaDhK_ns6F-NJ_8Rkno"
+                class="img-fluid" alt="Brick Layout">
+              <div class="portfolio-info">
+                <h4>BRICK</h4>
+                <p>Brick pattern with CSS Grid</p>
+                <a href="./files/brick.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 12. SEARCH -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="https://cdnwebsite.databox.com/wp-content/uploads/2021/04/05063738/google-search-operators.png"
+                class="img-fluid" alt="Search">
+              <div class="portfolio-info">
+                <h4>SEARCH</h4>
+                <p>Live search/filter example</p>
+                <a href="./files/enjoy.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- 13. BUTTONS -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img
+                src="https://img.freepik.com/free-vector/glossy-web-buttons-set-different-colors_1017-17868.jpg?semt=ais_hybrid&w=740"
+                class="img-fluid" alt="Buttons">
+              <div class="portfolio-info">
+                <h4>BUTTONS</h4>
+                <p>Various styled buttons demo</p>
+                <a href="./files/button.html" class="details-link" title="More Details"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- react js  -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>React Js</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <!-- live projects -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="https://cdn-icons-png.flaticon.com/512/2905/2905064.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Industries</h4>
+                <p>Satynam Industries and Traders</p>
+                <a href="https://achalfullstackdeveloper.github.io/project/" title="More Details"
+                  class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
         </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
 
     
     <!-- About Section -->
